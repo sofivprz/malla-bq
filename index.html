@@ -2,42 +2,53 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <title>Malla Interactiva</title>
+  <title>Malla Bioquímica USACH</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      padding: 20px;
-    }
-    .semestre {
-      margin-bottom: 20px;
-    }
+    body { font-family: Arial, sans-serif; padding: 20px; background: #f5f9ff; }
+    h1 { color: #003366; }
+    .nivel { margin-bottom: 30px; }
     .curso {
       display: inline-block;
-      padding: 10px;
-      margin: 5px;
-      background-color: #dfefff;
-      border: 1px solid #0077cc;
-      border-radius: 8px;
+      margin: 8px;
+      padding: 12px;
+      border-radius: 10px;
+      background-color: #e0f0ff;
+      border: 1px solid #005fa3;
       cursor: pointer;
     }
     .curso:hover {
-      background-color: #c7e0ff;
+      background-color: #c0e0ff;
     }
   </style>
 </head>
 <body>
-  <h1>Malla Curricular Interactiva</h1>
-  <div class="semestre">
-    <h2>1er Semestre</h2>
-    <div class="curso" onclick="alert('Biología I: Curso introductorio')">Biología I</div>
-    <div class="curso" onclick="alert('Química General: Fundamentos básicos')">Química General</div>
-    <div class="curso" onclick="alert('Matemáticas I: Álgebra y cálculo')">Matemáticas I</div>
+  <h1>Malla Curricular Bioquímica USACH (Plan 4111)</h1>
+
+  <div class="nivel">
+    <h2>🔹 Nivel 1</h2>
+    <div class="curso" onclick="alert('Biología Celular I\nSCT: 7')">Biología Celular I</div>
+    <div class="curso" onclick="alert('Química General I\nSCT: 8')">Química General I</div>
+    <div class="curso" onclick="alert('Matemáticas I\nSCT: 7')">Matemáticas I</div>
+    <div class="curso" onclick="alert('Inglés I\nSCT: 3')">Inglés I</div>
+    <div class="curso" onclick="alert('Introducción a la Bioquímica\nSCT: 4')">Intro a la Bioquímica</div>
   </div>
-  <div class="semestre">
-    <h2>2do Semestre</h2>
-    <div class="curso" onclick="alert('Biología II: Continuación de Biología I')">Biología II</div>
-    <div class="curso" onclick="alert('Física: Mecánica y termodinámica')">Física</div>
-    <div class="curso" onclick="alert('Estadística: Fundamentos')">Estadística</div>
+
+  <div class="nivel">
+    <h2>🔹 Nivel 2</h2>
+    <div class="curso" onclick="alert('Biología Celular II\nSCT: 7')">Biología Celular II</div>
+    <div class="curso" onclick="alert('Química General II\nSCT: 8')">Química General II</div>
+    <div class="curso" onclick="alert('Matemáticas II\nSCT: 7')">Matemáticas II</div>
+    <div class="curso" onclick="alert('Química Inorgánica\nSCT: 7')">Química Inorgánica</div>
+    <div class="curso" onclick="alert('Bioética\nSCT: 2')">Bioética</div>
+  </div>
+
+  <div class="nivel">
+    <h2>🔹 Nivel 3</h2>
+    <div class="curso" onclick="alert('Físico Química I\nSCT: 7')">Físico Química I</div>
+    <div class="curso" onclick="alert('Biofísica\nSCT: 5')">Biofísica</div>
+    <div class="curso" onclick="alert('Química Orgánica I\nSCT: 7')">Química Orgánica I</div>
+    <div class="curso" onclick="alert('Física\nSCT: 6')">Física</div>
+    <div class="curso" onclick="alert('Inglés II\nSCT: 3')">Inglés II</div>
   </div>
 </body>
 </html>
